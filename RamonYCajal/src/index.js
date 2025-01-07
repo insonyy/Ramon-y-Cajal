@@ -45,11 +45,16 @@ for (const token of tokens){
                     if (channel) {
                         await channel.send(`${i}`);
                     }
+
+                    /**
+                     * Esto es para ver si se puede evitar el rate limit, pero ni caso hace
+                     * */
+
+                    await new Promise(resolve => setTimeout(resolve, 50));
                 }
 
             }catch (error){
                 console.error("Error handling interaction:", error);
-
             }
         }
     })
