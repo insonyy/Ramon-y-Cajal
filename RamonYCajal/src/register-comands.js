@@ -20,7 +20,7 @@ const botConfigs = [
         token: process.env.TOKEN_CAJAL,
         client: process.env.CLIENT_ID_CAJAL,
         guildId: process.env.GUILD_ID
-    }
+    },
 ];
 
 (async () => {
